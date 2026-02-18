@@ -18,9 +18,14 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-gold/20 bg-ivory/95 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="/" className="text-2xl font-semibold tracking-wide text-charcoal">
-          Momzart
-        </Link>
+        import Image from "next/image";
+
+<Image 
+  src="/Momzart.png"
+  alt="Momzart Logo"
+  width={140}
+  height={40}
+/>
         <div className="flex items-center gap-4 text-sm text-charcoal">
           {links.map((link) => {
             const active = pathname === link.href;
