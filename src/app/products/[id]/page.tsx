@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { getProductById } from "@/lib/products";
 import { useStore } from "@/context/store-context";
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
+export default function ProductDetailPage({ params }: any) {
   const product = getProductById(params.id);
   const { addToCart, addToWishlist, wishlist } = useStore();
   const [activeImage, setActiveImage] = useState(0);
