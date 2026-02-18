@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ivory text-charcoal antialiased;
+}
+
+input,
+select,
+textarea {
+  @apply rounded-md border border-gold/30 bg-white px-3 py-2 outline-none ring-gold/30 focus:ring;
+}
